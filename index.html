@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+
+  </head>
+  <body>
+
+    <header class="head-head">
+
+        <div class="head">
+            <a class="logo"  href="index.html">
+              <img src="https://cdn.pixabay.com/photo/2016/12/27/13/10/logo-1933884_640.png" width="200px">
+                </a>
+
+            <ul class="links">
+            <li><a href="index.html">About</a></li>
+          <li><a href="pages/">Blank</a></li>
+          <li><a href="pages/">Blank</a></li>
+          <li><a href="pages/">Blank</a></li>
+            </ul>
+
+              <div class="buttons">
+        
+               <a href="contact.html">
+                <button>Contact Here!</button>
+               </a>  
+            </div>
+       
+    <div class="off-screen-menu">
+        <ul class="">
+          <li><a href="index.html">Blank</a></li>
+          <li><a href="pages/">Blank</a></li>
+          <li><a href="pages/">Blank</a></li>
+          <li><a href="pages/">Blank</a></li>
+          
+        </ul>
+    </div>
+
+    <nav>
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+</header>
+
+    <script>
+        const hamMenu = document.querySelector(".ham-menu");
+
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});
+
+
+document.addEventListener("click", (event) => {
+        const isClickInsideMenu = offScreenMenu.contains(event.target);
+        const isClickInsideButton = hamMenu.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickInsideButton) {
+            // Remove active classes to hide the menu
+            hamMenu.classList.remove("active");
+            offScreenMenu.classList.remove("active");
+        }
+    });
+</script>
+
+<div class="one-head">
+  <div class="one-text">
+      <h1>Make your business vision come to digital life</h1>
+      <p>Freelance front-end web-designer working with local business</p>
+      <button>Book a Call</button>
+  </div>
+</div>
+
+<div class="two-skills">
+  <div class="skill-text">
+    <h1>My Skills</h1>
+    <p>Every skill listed below I am an ablsoute fucking unit in</p>
+  </div>
+  
+  <div class="skill-box">
+    <div class="skill-unit">
+      HTML 
+    </div>
+    <div class="skill-unit">
+      CSS
+    </div>
+    <div class="skill-unit">
+      JavaScript 
+    </div>
+    <div class="skill-unit">
+      Bootstrap 
+    </div>
+    <div class="skill-unit">
+      Shopify 
+    </div>
+    <div class="skill-unit">
+      Tailwind
+    </div>
+    <div class="skill-unit">
+      SASS
+    </div>
+    <div class="skill-unit">
+      Wix
+    </div>
+    <div class="skill-unit">
+      Git 
+    </div>
+    <div class="skill-unit">
+      Netlify
+    </div>
+    <div class="skill-unit">
+      React.js
+    </div>
+    <div class="skill-unit">
+      Figma
+    </div>
+  </div>
+
+</div>
+
+<div class="three-about">
+  <div class="about-text">
+    <div class="about-text-head">
+      <h1>Who Am I?</h1>
+    </div>
+
+    <div class="about-text-p">
+      <p>Hey! Im Martin</p>
+      <p>Im a front-end web developer specializig in making websties completley form scratch.
+        Wether your a small business needing an online presenxe or a freelancer needing a landing page,
+        your website will be unique and tweaked to bring the results your hoping for.
+        I also gaurantee your satifaction offering unlimited revisions until complete satisfation.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-pic">
+    <img src="" alt="">
+  </div>
+</div>
+
+<div class="four-projects">
+    <div class="projects-head">
+      <h1>My Work</h1>
+    </div>
+    <div class="projects-holder">
+      <div class="project-box">
+        <img width="300px" height="300px" style="background-color: black;" src="" alt="">
+
+        <div class="project-text">
+          <h1>Webstie</h1>
+          <p>Description</p>
+          <div class="project-buttons">
+            <button>Live Link</button>
+            <button>Source Code</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img width="300px" height="300px" style="background-color: black;" src="" alt="">
+         
+        <div class="project-text">
+          <h1>Webstie</h1>
+          <p>Description</p>
+          <div class="project-buttons">
+            <button>Live Link</button>
+            <button>Source Code</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+<div class="footer-top">
+  <img width="300px" height="300px" style="background-color: black; border-radius: 50%;" src="" alt="">
+  <p>Ready to work togther?</p>
+  <button>Contact</button>
+</div>
+
+<div class="contact-all">
+   <div class="contact-text">
+    <p>Get in Contact Today!</p>
+    <h1>Ready to talk? Fill out the form to set up your free consultation call today!</h1>
+   </div>
+
+   <div class="contact-list">
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form
+    action="https://formspree.io/f/mpwqrdyn"
+    method="POST"
+  >
+  <label>
+    Full Name
+    <input type="name" name="name">
+  </label>
+    <label>
+      Email
+      <input type="email" name="email">
+    </label>
+    <label>
+      Phone
+      <input type="email" name="email">
+    </label>
+    <label>
+      Project Type ( What Fits Closest? )
+      <select name="options">
+        <option value="option1">Business Unique Website Build</option>
+        <option value="option2">E-commerce Store (shopify) </option>
+      </select>    
+    </label>
+    <label>
+      Project Details
+      <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send Message</button>
+  </form>
+
+
+<footer>
+  
+</footer>
+</body>
+</html>
